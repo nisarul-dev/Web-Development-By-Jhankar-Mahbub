@@ -143,3 +143,34 @@ sortedBigNumbers = bigNumbers.sort(function(a, b) {
 console.log(sortedBigNumbers); //[2, 6, 9, 13, 37, 58, 66, 81, 92] Now it is sorted
 
 
+//28-7 Unlimited parameters to a function using arguments
+function addNumbers(){
+    let result = 0;
+    console.log(arguments); //[Arguments] { '0': 23, '1': 43, '2': 54, '3': 36, '4': 43 }
+    for(const num of arguments){
+        result = result + num;
+    }
+    return result;
+}
+const sum = addNumbers(23, 43, 54, 36, 43);
+console.log(sum); //199
+
+
+//28-8 Different types of Error object and explore Try-catch
+const myName = 'ami';
+try {
+    myName = 'tumi'
+} catch (error) {
+    console.log('getting error', error); //getting error TypeError: Assignment to constant variable.
+}
+console.log(myName); //ami
+
+
+//28-9 A simple introduction to Date object in JavaScript
+const myFavDate = new Date('1971-12-16');
+console.log(myFavDate); //Thu Dec 16 1971 06:00:00 GMT+0600 (Bangladesh Standard Time)
+const anotherDate = new Date(1971, 3, 26, 11, 50, 40, 80)
+console.log(anotherDate); //Mon Apr 26 1971 11:50:40 GMT+0600 (Bangladesh Standard Time)
+if(myFavDate.getTime() > anotherDate.getTime()) {
+    console.log('favorite is earlier'); //favorite is earlier
+}
