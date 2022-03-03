@@ -21,11 +21,10 @@ function addPlayer() {
     playersContainer.appendChild(player);
 }
 
-document.getElementById('players').addEventListener('click', function (event) {
+document.getElementById('players').addEventListener('click', function(event) {
     if (event.target.tagName.toLowerCase() == 'div') {
         event.target.style.backgroundColor = 'yellow';
-    }
-    else {
+    } else {
         event.target.parentNode.style.backgroundColor = 'yellow';
     }
-})
+});
