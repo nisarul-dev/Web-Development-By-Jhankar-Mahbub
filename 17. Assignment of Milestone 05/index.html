@@ -16,9 +16,9 @@
 
 <body>
     <main class="container mx-auto w-5/6">
-        <div class="grid grid-cols-2 gap-x-8 my-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 my-8">
             <!-- Image Area -->
-            <section><img src="images/mac.png" class="mx-auto w-2/3" alt="mac book"></section>
+            <section class="mb-8"><img src="images/mac.png" class="mx-auto w-2/3" alt="mac book"></section>
             <!-- content Area -->
             <section>
                 <!-- heading part -->
@@ -46,35 +46,35 @@
                     </div>
 
                     <!-- Extra configuration price Section -->
-                    <div class="grid grid-cols-2 gap-x-2 mt-8 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 mt-8 md:w-11/12 font-bold">
                         <h4>Base Price</h4>
-                        <h4>$<span id="base-price">1299</span></h4>
+                        <h4 class="ml-16 md:ml-0">$<span id="base-price">1299</span></h4>
                     </div>
                     <hr class="w-72">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Extra Memory Cost</h4>
-                        <h4>$<span id="memory-cost">0</span></h4>
+                        <h4 class="ml-16 md:ml-0">$<span id="memory-cost">0</span></h4>
                     </div>
                     <hr class="w-72">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Extra Storage Cost</h4>
-                        <h4>$<span id="storage-cost">0</span></h4>
+                        <h4 class="ml-16 md:ml-0">$<span id="storage-cost">0</span></h4>
                     </div>
                     <hr class="w-72">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Delivery charge</h4>
-                        <h4>$<span id="delivery-cost">0</span></h4>
+                        <h4 class="ml-16 md:ml-0">$<span id="delivery-cost">0</span></h4>
                     </div>
                     <hr class="w-72 border-t-2 border-gray-800">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Total Price</h4>
-                        <h4>$<span id="total-price">1299</span></h4>
+                        <h4 class="ml-16 md:ml-0">$<span id="total-price">1299</span></h4>
                     </div>
                     <hr class="w-72">
 
                     <!-- Pomo Code Area -->
                     <h4 class="mt-8 mb-1">Add pomo code (stevekaku)</h4>
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <input id="pomo-input" type="text" class="px-4 border-2 rounded-lg z-0 focus:shadow focus:outline-none">
                         <button id="pomo-code-btn" class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">Apply</button>
                     </div>

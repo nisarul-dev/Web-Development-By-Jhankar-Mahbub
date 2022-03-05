@@ -11,4 +11,5 @@ body {
     border-radius: 0.25rem;
     padding: 0.25rem;
     transition: .2s;
+    margin-bottom: 0.5rem;
 }
