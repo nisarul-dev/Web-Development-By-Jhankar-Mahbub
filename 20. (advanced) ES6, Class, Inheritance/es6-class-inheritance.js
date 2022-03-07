@@ -42,14 +42,14 @@ console.log(b); //68
 //destructuring array
 const [p, q] = [45, 'momotag', 91, 86];
 console.log(p, q); //45 momotag
-
+    
 //nested object Optional chaining
 console.log(myObject.a.m.n); //Cannot read properties of undefined (reading 'n')
 console.log(myObject?.a?.m?.n); //undefined
 
 
 //31-4 Array map to do one line loop magic
-const numbers = [2, 4, 6, 8, 10];
+const numbers = [2,4,6,8,10   ];
 //1. loop through each element
 //2. for each element call the provided function
 //3. result for each element will be stored in an array
@@ -138,9 +138,9 @@ class NeptuneDev extends TeamMember {
         console.log(`${this.name} release app version ${version}`)
     }
 }
-const kamal = new Support('kamal khan', 'BD');
-const salman = new Support('Salman khan', 'Dubai');
-console.log(kamal); //Support {name: 'kamal khan', designation: 'Support Web Dev', address: 'BD'}
+const kamal2 = new Support('kamal khan', 'BD');
+const salman2 = new Support('Salman khan', 'Dubai');
+console.log(kamal2); //Support {name: 'kamal khan', designation: 'Support Web Dev', address: 'BD'}
 const ash = new NeptuneDev('Ash', 'Mumbai', 'Android studio');
 console.log(ash); //NeptuneDev {name: 'Ash', designation: 'Support Web Dev', address: 'Mumbai', codeEditor: 'Android studio'}
 ash.releaseApp('1.4.5'); //Ash release app version 1.4.5
