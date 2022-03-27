@@ -7,15 +7,14 @@ const searchLocation = () => {
     .then(data => loadweather(data[0]));
 }
 const loadweather = (location) => {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=3e4f45a2e9564ad5c5011b95491fff7d`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=3e4f45a2e9564ad5c5011b95491fff7d&units=metric`;
   fetch(url)
     .then(res => res.json())
     .then(data => displayWeather(data));
 }
 
 const displayWeather = (weatherInfo) => {
-  console.log(weatherInfo)
-  const kToC = (weatherInfo.main.temp - 273.15);
+  const temp = weatherInfo.main.temp;
   const searchField = document.getElementById('search-input')
   const searchText = searchField.value;
   searchField.value = '';
@@ -25,7 +24,7 @@ const displayWeather = (weatherInfo) => {
   div.innerHTML = `
     <img src="https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png" alt="">
     <h1>${searchText.toUpperCase()}</h1>
-    <h3><span>${Math.round(kToC)}</span>&deg;C</h3>
+    <h3><span>${Math.round(temp)}</span>&deg;C</h3>
     <h1 class="lead">${weatherInfo.weather[0].main}</h1>
   `;
   weatherContainer.appendChild(div);
