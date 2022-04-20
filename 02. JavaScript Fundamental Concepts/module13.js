@@ -12,16 +12,18 @@ console.log(friendsAge.length); //4
 friendsAge.push(19, 20);
 console.log(friendsAge); //(6) [15, 21, 14, 16, 19, 20]
 console.log(friendsAge.length); //6
-friendsAge.pop();
+var itemPoped = friendsAge.pop();
 console.log(friendsAge); //(5) [15, 21, 14, 16, 19]
+console.log(itemPoped); // 20
 
 
 // array add and remove element from the beginning and slice //
 var teaLine = ['kalam', 'Salam', 'Balam'];
 teaLine.push('Jalam');
 console.log(teaLine); //(4) ['kalam', 'Salam', 'Balam', 'Jalam']
-teaLine.shift(); // remove
+var itemShifted = teaLine.shift(); // remove
 console.log(teaLine); //(3) ['Salam', 'Balam', 'Jalam']
+console.log(itemShifted); // 'kalam'
 teaLine.unshift('palam'); // add
 console.log(teaLine); //(4) ['palam', 'Salam', 'Balam', 'Jalam']
 var part = teaLine.slice(0, 2);
